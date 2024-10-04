@@ -104,6 +104,81 @@ CHANGE DATATYPE FOR 3 COLUMNS.
 RENAME TABLE NAME.
 
 
+SELECT * FROM metro_details;
+
+DML: Data Manipulation Language.
+1)SELECT : 
+2)INSERT: 
+/*Syntax for inserting the data into table
+INSERT INTO table_name VALUES(data1, data2, ......);*/
+INSERT INTO metro_details values(1, 'JPNagar', 100, 'Greenline', 5);
+INSERT INTO metro_details values(2, 'whitefield', 200, 'Purpleline', 14);
+INSERT INTO metro_details values(3, 'Ecity', 150, 'yellowline', 16);
+
+SELECT * FROM metro_details;
+
+INSERT INTO metro_details(id, metro_line, no_of_stops) 
+VALUES(4,'Green', 6);
+
+batch insert:
+
+INSERT INTO metro_details values(5,'Jaynagar', 300,'Green',9),
+(6,'Mejastic', 400, 'Purple', 20),
+(7,'Krmarket', 250, 'Green', 15);
+
+SELECT * FROM metro_details;
+SELECT m_name,id,metro_line from metro_details;
+
+1000 rows:
+
+SELECT * FROM metro_details;
+WHERE: Filter the data from table.
+/*Syntax for filter the data from table
+SELECT * FROM table_name where column_condition;*/
+SELECT * FROM metro_details where id = 3;
+
+SELECT * FROM metro_details where metro_line = 'Green';
+
+SELECT m_name FROM metro_details where id = 2;
+
+SELECT no_of_passengers, no_of_stops from metro_details
+where metro_line = 'Purpleline';
+
+
+For 4 tables Insert 10 rows for each table.
+filter the data using where clause.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
