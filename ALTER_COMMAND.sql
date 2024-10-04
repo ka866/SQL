@@ -146,7 +146,7 @@ where metro_line = 'Purpleline';
 
 
 For 4 tables Insert 10 rows for each table.
-filter the data using where clause.
+filter the data using where claus.
 
 
 
